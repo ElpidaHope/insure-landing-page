@@ -263,7 +263,7 @@ main .more h1 {
 @media (min-width: 43.75em) {
   main .more {
     width: 80%;
-    background-image: url(../../images/bg-pattern-how-we-work-desktop.svg);
+    background-image: url("../../images/bg-pattern-how-we-work-desktop.svg");
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -278,7 +278,7 @@ main .more h1 {
 
 .footer {
   background-color: hsl(0deg, 0%, 98%);
-  background-image: url(../../images/bg-pattern-footer-mobile.svg);
+  background-image: url("../../images/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -324,6 +324,9 @@ main .more h1 {
 @media (min-width: 43.75em) {
   .footer {
     padding-inline: 7.5rem;
+    background-image: url("../../images/bg-pattern-footer-desktop.svg");
+    background-position: top left;
+    background-size: 25rem;
   }
   .footer__first {
     flex-direction: row;
