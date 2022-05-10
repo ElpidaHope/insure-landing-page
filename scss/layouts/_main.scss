@@ -144,7 +144,7 @@ main {
     margin-inline: auto;
     background-color: map-get(g.$primary, dark-violet );
     color: white;
-    background-image: url('../../images/bg-pattern-how-we-work-mobile.svg');
+    background-image: url('./../../images/bg-pattern-how-we-work-mobile.svg');
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -155,7 +155,7 @@ main {
     }
     @include u.biggerthan(medium) {
       width: 80%;
-      background-image: url('../../images/bg-pattern-how-we-work-desktop.svg');
+      background-image: url('./../../images/bg-pattern-how-we-work-desktop.svg');
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -170,7 +170,7 @@ main {
 }
 .footer {
   background-color: map-get(g.$neutral, very-light-gray);
-  background-image: url('../../images/bg-pattern-footer-mobile.svg');
+  background-image: url('./../../images/bg-pattern-footer-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -219,7 +219,7 @@ main {
 
   @include u.biggerthan(medium) {
     padding-inline: u.rem(120);
-    background-image: url('../../images/bg-pattern-footer-desktop.svg');
+    background-image: url('./../../images/bg-pattern-footer-desktop.svg');
     background-position: top left;
     background-size: u.rem(400);
     &__first {
