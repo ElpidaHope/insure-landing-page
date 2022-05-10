@@ -1,0 +1,20 @@
+@use 'sass:map';
+@use 'sass:string';
+
+$font: (
+  "heading": "'DM Serif Display', serif",
+  "body": "'Karla',sans-serif "
+);
+
+@function font($place) {
+  @return string.unquote(map.get($font, $place))
+}
+
+$weights : (
+  "light": 400,
+  "bold": 700
+);
+
+@function weight($style) {
+  @return map-get($weights, $style)
+}

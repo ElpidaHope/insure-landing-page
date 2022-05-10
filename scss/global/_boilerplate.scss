@@ -1,0 +1,68 @@
+@use '../utils/' as u;
+@use 'colors';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,*::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: u.font(body);
+}
+
+h1 {
+  font-family: u.font(heading);
+  font-size: clamp(u.rem(42), 20px + 2vw, u.rem(60));
+  font-weight: u.weight(bold);
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.5;
+  font-family: u.font(body);
+  font-size: clamp(u.rem(15), u.rem(15) + 0.1vw, u.rem(22));
+}
+
+.title {
+  font-family: u.font(heading);
+  font-size: clamp(u.rem(16), 16px + 2vw, u.rem(24));
+  font-weight: u.weight(bold);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(273, 4%, 51%);
+  text-transform: uppercase;
+  font-family: u.font(body);
+  font-weight: u.weight(light);
+  letter-spacing: u.rem(2);
+}
+
+.btn {
+  border: 2px solid map-get(colors.$neutral, dark-grayish-violet);
+  padding: u.rem(10) u.rem(20);
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bg-white:hover {
+  background-color: white;
+  color: black;
+}
+
+.bg-black:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
